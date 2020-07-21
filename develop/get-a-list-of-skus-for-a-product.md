@@ -139,7 +139,7 @@ None.
 Get a list of SKUs for a given product:
 
 ```http
-GET http://api.partnercenter.microsoft.com/v1/products/DZH318Z0BPS6/skus?country=US HTTP/1.1
+GET https://api.partnercenter.microsoft.com/v1/products/DZH318Z0BPS6/skus?country=US HTTP/1.1
 Authorization: Bearer <token>
 Accept: application/json
 MS-RequestId: 18b41adf-29b5-48eb-b14f-c9683a4e5b7d
@@ -149,7 +149,7 @@ MS-CorrelationId: e75c1060-852e-4b49-92b0-cd15167a0d51
 Get a list of SKUs for an Azure Reservation product. Only include the SKUs which are applicable to Azure plans and not Microsoft Azure (MS-AZR-0145P) subscriptions:
 
 ```http
-GET http://api.partnercenter.microsoft.com/v1/products/DZH318Z0BQ5S/skus?country=US&reservationScope=AzurePlan HTTP/1.1
+GET https://api.partnercenter.microsoft.com/v1/products/DZH318Z0BQ5S/skus?country=US&reservationScope=AzurePlan HTTP/1.1
 Authorization: Bearer <token>
 Accept: application/json
 MS-RequestId: 18b41adf-29b5-48eb-b14f-c9683a4e5b7d
@@ -159,7 +159,7 @@ MS-CorrelationId: e75c1060-852e-4b49-92b0-cd15167a0d51
 Get a list of SKUs for an Azure Reservation product. Only include the SKUs which are applicable to Microsoft Azure (MS-AZR-0145P) subscriptions and not Azure plans:
 
 ```http
-GET http://api.partnercenter.microsoft.com/v1/products/DZH318Z0BQ5S/skus?country=US HTTP/1.1
+GET https://api.partnercenter.microsoft.com/v1/products/DZH318Z0BQ5S/skus?country=US HTTP/1.1
 Authorization: Bearer <token>
 Accept: application/json
 MS-RequestId: 18b41adf-29b5-48eb-b14f-c9683a4e5b7d
